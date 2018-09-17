@@ -11,6 +11,12 @@
     <name>hello-travis-sonarcloud</name>
     <description>Demo project for Spring Boot</description>
 
+    <scm>
+        <url>https://github.com/pluto-atom-4/hello-travis-sonarcloud</url>
+        <connection>scm:git:https://github.com/pluto-atom-4/hello-travis-sonarcloud.git</connection>
+        <developerConnection>scm:git:https://github.com/pluto-atom-4/hello-travis-sonarcloud.git</developerConnection>
+    </scm>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
