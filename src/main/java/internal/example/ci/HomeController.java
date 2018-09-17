@@ -1,11 +1,15 @@
 package internal.example.ci;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HomeController {
+
+    private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
     @RequestMapping("/")
     public @ResponseBody String message() {
@@ -16,7 +20,8 @@ public class HomeController {
         if (true) {
             if (true) {
                 if (false) {
-                    // nothing to do.
+                    // not reachable
+                    logger.info("Not reachable");
                 }
             }
         }
